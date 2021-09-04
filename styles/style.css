@@ -3,22 +3,56 @@
 
 
 /* Global CSS */
-*{
+* {
     font-family: 'Raleway', sans-serif;
 }
 
 /*-----------------
  Navbar
  ---------------- */
-nav ul li a.nav-link{
+nav ul li a.nav-link {
     color: black;
     font-weight: 600;
 }
-nav ul li a.nav-link:focus{
+
+nav ul li a.nav-link:focus {
     color: black;
     font-weight: 600;
 }
-nav ul li a.nav-link:hover{
+
+nav ul li a.nav-link:hover {
     color: #524101;
     font-weight: 600;
+}
+
+
+/*------------------------
+ Food Search
+ --------------------- */
+
+Header form {
+    width: 350px;
+}
+Header form input{
+    border-radius: 20px 0 0 20px !important;
+    -webkit-border-radius: 20px 0 0 20px !important;
+    -moz-border-radius: 20px 0 0 20px !important;
+    -ms-border-radius: 20px 0 0 20px !important;
+    -o-border-radius: 20px 0 0 20px !important;
+}
+Header form button {
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #00a01b;
+    font-weight: 600;
+    border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+}
+Header form button:hover{
+    background-color: black;
+    color: white;
 }
