@@ -16,12 +16,12 @@ nav ul li a.nav-link {
 }
 
 nav ul li a.nav-link:focus {
-    color: black;
+    color: #D92B2A;
     font-weight: 600;
 }
 
 nav ul li a.nav-link:hover {
-    color: #524101;
+    color: #D92B2A;
     font-weight: 600;
 }
 
@@ -33,13 +33,15 @@ nav ul li a.nav-link:hover {
 Header form {
     width: 350px;
 }
-Header form input{
+
+Header form input {
     border-radius: 20px 0 0 20px !important;
     -webkit-border-radius: 20px 0 0 20px !important;
     -moz-border-radius: 20px 0 0 20px !important;
     -ms-border-radius: 20px 0 0 20px !important;
     -o-border-radius: 20px 0 0 20px !important;
 }
+
 Header form button {
     color: white;
     outline: none;
@@ -52,7 +54,45 @@ Header form button {
     -ms-border-radius: 0 20px 20px 0;
     -o-border-radius: 0 20px 20px 0;
 }
-Header form button:hover{
-    background-color: black;
+
+Header form button:hover {
+    background-color: #D92B2A;
     color: white;
+}
+
+
+/*----------------------
+ Categories
+ ------------------------ */
+
+#categories .container .section-title span {
+    color: #00a01b;
+}
+
+#categories .container .section-title .bars .first {
+    width: 30px;
+    height: 3px;
+    margin-right: 2px;
+}
+
+#categories .container .section-title .bars .second {
+    width: 5px;
+    height: 3px;
+    margin-right: 2px;
+}
+
+#categories .container .section-title .bars .third {
+    width: 3px;
+    height: 3px;
+    margin-right: 2px;
+}
+
+#categories .container .section-title .bars .fourth {
+    width: 2px;
+    height: 3px;
+    margin-right: 2px;
+}
+#categories .container .col .product-image img{
+    width: 250px;
+    height: 210px;
 }
