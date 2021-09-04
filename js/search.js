@@ -84,13 +84,31 @@ const displaySearchResult = (products) => {
             cardText.classList.add('fs-6')
             cardText.innerText = product.strInstructions.slice(0,75)+'...'
             cardBody.appendChild(cardText)
-    
+            
+            //creating card footer
+            const cardFooter = document.createElement('div')
+            cardFooter.classList.add('card-footer')
+            cardFooter.classList.add('d-flex')
+            cardFooter.classList.add('justify-content-between')
+            cardFooter.classList.add('align-items-center')
+            card.appendChild(cardFooter)
+
+
             //creating product price and appeand
             const productPrice = document.createElement('h5')
             productPrice.classList.add('text-success')
             productPrice.classList.add('font-monospace')
             productPrice.innerText = '$25.00'
-            cardBody.appendChild(productPrice)
+            cardFooter.appendChild(productPrice)
+
+            //Creating Add to cart button
+            const cartbtn = document.createElement('button')
+            cartbtn.setAttribute('data-bs-toggle','offcanvas')
+            cartbtn.setAttribute('data-bs-target','#offcanvasRight')
+            cartbtn.setAttribute('aria-controls','offcanvasRight')
+            cartbtn.id = 'add-to-cart'
+            cartbtn.innerText = 'Add to card'
+            cardFooter.appendChild(cartbtn)
     
             // Adding this product to main container
             displayItem.appendChild(div)
@@ -98,3 +116,7 @@ const displaySearchResult = (products) => {
         });
     }
 }
+
+/* --------------------
+    Add to cart functionality
+    ----------------------------- */

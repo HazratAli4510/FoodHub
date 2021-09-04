@@ -114,3 +114,34 @@ Header form button:hover {
 #resultNotFound{
     display: none;
 }
+
+
+
+/*---------------------
+ Shopping cart ofCanvas 
+ ---------------------------*/
+.cart-btn{
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+}
+#item-delete-btn{
+    background: none;
+}
+#item-delete-btn:hover{
+    background-color: rgb(226, 226, 226);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#item-minus-btn{
+    margin-left: 0;
+}
+#add-to-cart{
+    border: none;
+}
